@@ -30,12 +30,14 @@ It is the settings file for the compiler.
 ```json
 {
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "commonjs",
-    "outDir": "dist",
-    "strict": true
-  },
-  "include": ["src"]
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "esnext",
+    "target": "esnext",
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleDetection": "force"
+  }
 }
 ```
 
